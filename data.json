@@ -1,0 +1,29 @@
+{
+  "todos": [
+    {
+      "id": "382c",
+      "text": "Go to the GYM",
+      "description": ""
+    },
+    {
+      "id": "7c4b",
+      "text": "Complete JS homework",
+      "description": "modification of my todo file"
+    },
+    {
+      "id": "d91b",
+      "text": "Go for a walk",
+      "description": "See Republic Square`s decoration"
+    },
+    {
+      "id": "00e3",
+      "text": "Call a friend",
+      "description": ""
+    },
+    {
+      "id": "8147",
+      "text": "Write polyfill of axios",
+      "description": "using XmlHttpRequest"
+    }
+  ]
+}

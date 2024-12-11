@@ -1,9 +1,12 @@
-export const ToDoItem = ({ todo , onDelete, onToggle}) => {
-  
+export const ToDoItem = ({ todo, onDelete, onToggle }) => {
   return (
     <div className="p-4 bg-pink-50 text-gray-800 rounded-lg shadow-sm mb-4 flex items-center justify-between border border-gray-200">
       <div>
-        <p className={`text-base font-medium ${todo.completed ? 'text-gray-500 line-through' : 'text-gray-800'}`}>
+        <p
+          className={`text-base font-medium ${
+            todo.completed ? "text-gray-500 line-through" : "text-gray-800"
+          }`}
+        >
           {todo.text}
         </p>
       </div>
@@ -14,7 +17,7 @@ export const ToDoItem = ({ todo , onDelete, onToggle}) => {
         >
           {todo.completed ? "Cancel" : "Completed"}
         </button>
-        <button 
+        <button
           onClick={() => onDelete(todo.id)}
           className="px-3 py-1 bg-gray-100 text-gray-800 rounded-lg hover:bg-gray-200 transition"
         >
@@ -22,5 +25,5 @@ export const ToDoItem = ({ todo , onDelete, onToggle}) => {
         </button>
       </div>
     </div>
-  )
-}
+  );
+};

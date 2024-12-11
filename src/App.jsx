@@ -1,6 +1,6 @@
-
-import './App.css';
-import { ToDoList } from './components/todo-list';
+import "./App.css";
+import { ToDoList } from "./components/todo-list";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   return (
@@ -11,6 +11,19 @@ function App() {
         </header>
         <div className="p-4">
           <ToDoList />
+          <ToastContainer
+            position="top-right"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="colored"
+            transition:Bounce
+          />
         </div>
       </div>
     </div>
@@ -18,4 +31,3 @@ function App() {
 }
 
 export default App;
-
